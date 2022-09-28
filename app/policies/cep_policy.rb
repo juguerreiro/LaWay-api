@@ -1,7 +1,7 @@
 class CepPolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
-      scope.where(user: user)
+      user ? scope.where(user: user) : scope.all
     end
   end
 
