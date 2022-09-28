@@ -20,11 +20,6 @@ $ rails db:migrate
 $ rails db:seed
 ```
 
-3. Após inicie o servidor
-```ruby
-$ rails server
-```
-
 ## Passo 2 - Credenciais
 1. Log in: um login padrão foi criado dentro do seed, credenciais de acesso:
 
@@ -37,8 +32,7 @@ token: "123456"
 $ rails console
 $ User.last
 ```
-
-2. Crie um novo usuário caso queira gerar um novo token de autenticidade **automaticamente**
+2. Endpoint para gerar um usuário com um novo token de autenticidade **automaticamente**
 ```ruby
 $ rails console
 $ User.create(email: "SEU_EMAIL", password: "SUA_SENHA")
@@ -56,12 +50,16 @@ X-User-Token: authentication_token
 { "cep": "87013-010" }
 # passar o cep neste formato
 ```
-3. Endpoint para buscar um CEP e guarda-lo em seu banco de dados
+3. Após inicie o servidor
+```ruby
+$ rails server
+```
+4. Endpoint para buscar um CEP e guarda-lo em seu banco de dados
 ```sh
 # Método POST
 http://localhost:3000/api/v1/ceps
 ```
-4. Endpoint para mostrar todos os CEPs cadastrados no usuário
+5. Endpoint para mostrar todos os CEPs cadastrados no usuário
 ```sh
 # Método GET
 http://localhost:3000/api/v1/ceps
