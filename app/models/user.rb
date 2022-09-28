@@ -1,5 +1,6 @@
 class User < ApplicationRecord
-  has_many :cep
+  acts_as_token_authenticatable
+  has_many :ceps
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,

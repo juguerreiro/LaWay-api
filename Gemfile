@@ -63,5 +63,13 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# An authorization gem
+# An authorizat`ion gem
 gem "pundit"
+
+# generate token for the user
+gem 'simple_token_authentication'
+
+gem 'net-smtp'
+
+# used to fetch an API
+gem "rest-client"
