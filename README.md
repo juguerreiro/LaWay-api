@@ -1,4 +1,4 @@
-# Latamgateway - API CEPs
+# LaWay - API CEPs
 Essa aplicação foi desenvolvida em Ruby on Rails, e tem como objetivo retornar os dados de um endereço completo utilizando um CEP. 
 O apiCEP foi utilizado para fazer a consulta.
 
