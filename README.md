@@ -70,5 +70,5 @@ http://localhost:3000/api/v1/ceps
 ## Passo 4 - Testes
 1. Para rodar os testes 
 ```ruby
-$ rspec
+$ bundle exec rspec
 ```
