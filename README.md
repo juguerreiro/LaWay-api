@@ -58,11 +58,13 @@ $ rails server
 ```sh
 # Método POST
 http://localhost:3000/api/v1/ceps
+# substituir 'http://localhost:3000' pela sua url padrão
 ```
 5. Endpoint para mostrar todos os CEPs cadastrados no usuário
 ```sh
 # Método GET
 http://localhost:3000/api/v1/ceps
+# substituir 'http://localhost:3000' pela sua url padrão
 ```
 
 ## Passo 4 - Testes
