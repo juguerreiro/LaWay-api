@@ -33,12 +33,18 @@ gem 'devise'
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form', github: 'heartcombo/simple_form'
-group :development, :test do  gem 'pry-byebug'
+
+group :development, :test do
+  gem 'pry-byebug'
   gem 'pry-rails'
   gem 'dotenv-rails'
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'factory_bot_rails'
 end
 
 group :development do
@@ -52,9 +58,9 @@ group :development do
   gem 'spring'
 end
 
+
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver', '>= 4.0.0.rc1'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
@@ -68,13 +74,7 @@ gem "pundit"
 
 # generate token for the user
 gem 'simple_token_authentication'
-
 gem 'net-smtp'
 
 # used to fetch an API
 gem "rest-client"
-
-# gem to run test
-group :development, :test do
-  gem 'rspec-rails', '~> 5.0.0'
-end
