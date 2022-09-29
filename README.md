@@ -4,7 +4,7 @@ O apiCEP foi utilizado para fazer a consulta.
 
 ## Passo 1 - Instalação
 1. Clone o repositório do github
-```ruby
+```sh
 $git clone git@github.com:juguerreiro/laway-api.git
 ```
 
