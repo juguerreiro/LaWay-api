@@ -10,7 +10,7 @@ RSpec.describe User, :type => :model do
   end
 
   it "has a unique username" do
-    user2 = build(:user, email: "bob@gmail.com")
+    user2 = build(:user, email: "user12@test.com")
     expect(user2).to_not be_valid
   end
 
