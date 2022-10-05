@@ -24,7 +24,7 @@ $ rails db:seed
 1. Log in: um login padrão foi criado dentro do seed, credenciais de acesso:
 
 ```sh
-email: "test@laway.com"
+email: "tests@laway.com"
 token: "123456"
 ```
 2. Acesse o console para ter acesso a informação de token do usuário(authentication_token)
